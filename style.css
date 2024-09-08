@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.bg{
+    background: url(assets/images/Stormy.jpg) center/cover no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.271);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    width: 50px;
+    height: 260px;
+    margin-right: 25px;
+    margin-left: -20px;
+}
+
+.bg_1{
+    border-radius: 30px;
+    height: 650px;
+    width: 1150px;
+    background-color: rgba(0, 0, 0, 0.204);
+    backdrop-filter: blur(10px);
+}
+
+.profile{
+    cursor: pointer;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg_1 h1{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 37px;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.search{
+    background-color: rgba(0, 0, 0, 0.478);
+    height: 40px;
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.fa{
+    color: rgba(255, 255, 255, 0.607);
+    font-size: 18px;
+    padding: 0 5px 0 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#converter{
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.141);
+    color: rgba(255, 255, 255, 0.599);
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#userLocation{
+    width: 630px;
+    height: 30px;
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.655);
+    outline: none;
+}
+
+.top-icon{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.top-icon img{
+    width: 40px;
+    margin: 0 15px 0 10px;   
+}
+
+.top-icon i{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.601);
+    background-color: rgba(0, 0, 0, 0.371);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "output map weather-output"
+    "bottom bottom weather-output";
+}
+
+.output{
+    grid-area: output;
+    background-color: rgba(0, 0, 0, 0.368);
+    height: 270px;
+    width: 340px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.656);
+}
+
+.List_content li{
+    cursor: pointer;
+}
+
+.default_info{
+    text-align: center;
+}
+
+.default_day{
+    font-size: 33px;
+    font-weight: normal;
+}
+
+.default_date1{
+    font-size: 17px;
+}
+
+.icons img{
+    height: 180px;
+    width: 230px;
+    margin: -35px 0;
+}
+
+.weather_temp{
+    margin-top: -5px;
+    font-size: 30px;
+}
+
+.cloudtxt{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+#map1{
+    grid-area: map;
+    background-color: rgba(0, 0, 0, 0.368);
+    height: 270px;
+    width: 450px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#map{
+    width: 93%;
+    height: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.weather-output{
+    grid-area: weather-output;
+    background-color: rgba(0, 0, 0, 0.368);
+    height: 550px;
+    width: 286px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 19px;
+    color: rgba(255, 255, 255, 0.675);
+}
+
+.heading{
+    color: rgba(255, 255, 255, 0.874);
+    font-size: 22px;
+    text-align: center;
+    margin-top: 8px;
+    word-spacing: 50px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.day_info{
+    font-weight: normal;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+}
+
+.day_info h1{
+    color: rgba(255, 255, 255, 0.688);
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.humidity, .wind-speed, .sun2, .sun3, .clouds, .locationName, .pressure{
+    display: flex;
+    align-items: center;;
+}
+
+#WValue{
+    margin-right: 25px;
+}
+
+#CValue{
+    margin-left: 55px;
+}
+
+#PValue{
+    margin-left: 27px;
+}
+
+.category{
+    height: 66px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.426);
+    width: 240px;
+    cursor: pointer;
+}
+
+.category i{
+    margin-right: 15px;
+    margin-left: 7px;
+}
+
+
+.sun{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fa-sun{
+    margin-right: 19px;   
+}
+
+.bottom{
+    grid-area: bottom;
+    background-color: rgba(0, 0, 0, 0.368);
+    height: 260px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.heading1{
+    color: rgba(255, 255, 255, 0.655);
+    font-weight: normal;
+    font-size: 23px;
+    margin: 10px 28px;
+}
+
+.List_content ul{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    color: white;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.List_content ul li:hover{
+    background: rgba(255, 255, 255, 0.312);
+    color: black;
+    font-weight: 600;
+}
+
+.List_content ul img{
+    height: 100px;
+    width: 152px;
+    margin: 0 -20px -10px -20px;
+}
+
+.List_content ul li{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
+.default_date1{
+    margin-top: 10px;
+}
+
+.day_te{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+

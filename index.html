@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="bg">
+        <div class="navbar"></div>
+        <div class="bg_1">
+            <div class="top">
+                <h1>Weather App</h1>
+                <div class="search">
+                    <i id="search-button" class="fa fa-search btn_search"></i>
+                    <input type="text" id="userLocation" class="input_field" placeholder="Search for places...">
+                </div>
+                <div class="top-icon">
+                    <i class="bx bx-bell"></i>
+                    <img class="profile" src="assets/images/sun.png" alt="">
+                </div>
+            </div>
+
+            <div class="mid">
+                <div class="output">
+                    <div class="default_info">
+                        <h2 class="default_day">Sunday</h2>
+                        <span class="default_date">18 September 2024</span>
+                        <div class="icons">
+                            <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
+                            <h2 class="weather_temp">22°C</h2>
+                            <h3 class="cloudtxt">Overcast Clouds</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="map1">
+                    <div id="map">
+
+                    </div>
+                </div>
+
+                <div class="weather-output">
+                    <h3 class="heading">Today's Highlights</h3>
+                    <div class="day_info">
+                        <div class="category">
+                            <div class="locationName">
+                                <i class="fa-solid fa-water"></i>
+                                Name
+                                <h1 id="HValue">Ratnagiri</h1>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="wind-speed">
+                                <i class="fa-solid fa-wind"></i>
+                                Wind Speed
+                                <h1 id="WValue">3.41km/h</h1>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="sun2">
+                                <i class="fa-solid fa-sun"></i>
+                                Sunrise
+                                <h1 id="sunRise">06:20 AM</h1>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="sun3">
+                                <i class="fa-regular fa-sun"></i>
+                                Sunset
+                                <h1 id="sunSet">07:02 PM</h1>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="clouds">
+                                <i class="fa-solid fa-cloud"></i>
+                                Clouds
+                                <h1 id="CValue">100 %</h1>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="humidity">
+                                <i class="fa-solid fa-water"></i>
+                                Humidity
+                                <h1 id="HValue">89 %</h1>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="pressure">
+                                <i class="fa-solid fa-volcano"></i>
+                                Pressure
+                                <h1 id="PValue">1007 hpa</h1>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bottom">
+                    <h2 class="heading1">This Week</h2>
+                    <div class="List_content">
+                        <ul>
+                            <li>
+                                <p class="default_date1">18 Sep, Mon</p>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
+                                <p>Rain</p>
+                                <p class="day_te">23°C</p>
+                            </li>
+                            <li>
+                                <p class="default_date1">18 Sep, Tue</p>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
+                                <p>Rain</p>
+                                <p class="day_te">23°C</p>
+                            </li>
+                            <li>
+                                <p class="default_date1">18 Sep, Wed</p>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
+                                <p>Rain</p>
+                                <p class="day_te">23°C</p>
+                            </li>
+                            <li>
+                                <p class="default_date1">18 Sep, Thu</p>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
+                                <p>Rain</p>
+                                <p class="day_te">23°C</p>
+                            </li>
+                            <li>
+                                <p class="default_date1">18 Sep, Fri</p>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
+                                <p>Rain</p>
+                                <p class="day_te">23°C</p>
+                            </li>
+                            <li>
+                                <p class="default_date1">18 Sep, Sat</p>
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="">
+                                <p>Rain</p>
+                                <p class="day_te">23°C</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzgfqxikbJ1xSLWn1eFxTqBoxw4ZdVd_0&callback=myMap"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
