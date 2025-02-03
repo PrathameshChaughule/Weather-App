@@ -1,5 +1,3 @@
-https://prathameshchaughule.github.io/Weather-App/
-
 # 🌤️ Weather App  
 
 A simple and interactive weather application that provides real-time weather updates and displays the location on **Google Maps**. This app is built using **HTML, CSS, and JavaScript**, and fetches weather data using the **OpenWeather API**.  
@@ -26,3 +24,17 @@ A simple and interactive weather application that provides real-time weather upd
 ```bash
 git clone https://github.com/PrathameshChaughule/Weather-App.git
 cd Weather-App
+```
+### 2️⃣ Open the `index.html` file in a web browser.  
+
+## 🌍 Live Demo  
+Check out the live version of the app here:  
+🔗 **[Weather App](https://prathameshchaughule.github.io/Weather-App/)**  
+
+## 🙌 Contributing  
+Feel free to contribute! Fork the repository, make your changes, and submit a pull request.  
+
+## 📞 Contact  
+For any queries or suggestions, reach out via:  
+📧 **Email:** pvc14102002@gmail.com  
+💼 **GitHub:** [@PrathameshChaughule](https://github.com/PrathameshChaughule)
